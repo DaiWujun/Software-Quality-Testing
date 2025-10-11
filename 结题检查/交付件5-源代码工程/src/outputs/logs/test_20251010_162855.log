@@ -1,0 +1,10 @@
+2025-10-10 16:28:55 - TestLogger - INFO - 日志系统初始化完成，日志文件: ../outputs/logs\test_20251010_162855.log
+2025-10-10 16:29:48 - utils - DEBUG - 发送 POST 请求: http://localhost:8443/api/register
+2025-10-10 16:29:48 - utils - DEBUG - 请求数据: {'username': 'admin_demo', 'password': '123', 'name': '', 'phone': '', 'email': 'admin_demo@example.com'}
+2025-10-10 16:29:48 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8443
+2025-10-10 16:29:48 - urllib3.connectionpool - DEBUG - http://localhost:8443 "POST /api/register HTTP/11" 200 None
+2025-10-10 16:29:48 - utils - DEBUG - 响应状态码: 200
+2025-10-10 16:29:48 - utils - DEBUG - 发送 POST 请求: http://localhost:8443/api/login
+2025-10-10 16:29:48 - utils - DEBUG - 请求数据: {'username': 'admin_demo', 'password': '123'}
+2025-10-10 16:29:48 - urllib3.connectionpool - DEBUG - http://localhost:8443 "POST /api/login HTTP/11" 200 None
+2025-10-10 16:29:48 - utils - DEBUG - 响应状态码: 200

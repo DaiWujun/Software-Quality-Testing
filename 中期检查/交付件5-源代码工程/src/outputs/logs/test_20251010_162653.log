@@ -1,0 +1,23 @@
+2025-10-10 16:26:53 - TestLogger - INFO - 日志系统初始化完成，日志文件: ../outputs/logs\test_20251010_162653.log
+2025-10-10 16:26:53 - utils - DEBUG - 发送 POST 请求: http://localhost:8443/api/register
+2025-10-10 16:26:53 - utils - DEBUG - 请求数据: {'username': 'admin_demo', 'password': '123', 'name': '', 'phone': '', 'email': 'admin_demo@example.com'}
+2025-10-10 16:26:53 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8443
+2025-10-10 16:26:53 - urllib3.connectionpool - DEBUG - http://localhost:8443 "POST /api/register HTTP/11" 200 None
+2025-10-10 16:26:53 - utils - DEBUG - 响应状态码: 200
+2025-10-10 16:26:53 - utils - DEBUG - 发送 POST 请求: http://localhost:8443/api/login
+2025-10-10 16:26:53 - utils - DEBUG - 请求数据: {'username': 'admin_demo', 'password': '123'}
+2025-10-10 16:26:53 - urllib3.connectionpool - DEBUG - http://localhost:8443 "POST /api/login HTTP/11" 200 None
+2025-10-10 16:26:53 - utils - DEBUG - 响应状态码: 200
+2025-10-10 16:26:54 - utils - DEBUG - 发送 POST 请求: http://localhost:8443/api/login
+2025-10-10 16:26:54 - utils - DEBUG - 请求数据: {'username': 'admin', 'password': '123'}
+2025-10-10 16:26:54 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): localhost:8443
+2025-10-10 16:26:54 - urllib3.connectionpool - DEBUG - http://localhost:8443 "POST /api/login HTTP/11" 200 None
+2025-10-10 16:26:54 - utils - DEBUG - 响应状态码: 200
+2025-10-10 16:26:54 - utils - DEBUG - 发送 PUT 请求: http://localhost:8443/api/admin/user
+2025-10-10 16:26:54 - utils - DEBUG - 请求数据: {'username': 'admin_demo', 'name': '', 'phone': '', 'email': 'admin_demo@example.com', 'roles': [{'id': 1, 'name': 'sysAdmin', 'nameZh': '系统管理员', 'enabled': True, 'perms': [{'id': 1, 'name': 'users_management', 'desc_': '用户管理', 'url': '/api/admin/user'}, {'id': 2, 'name': 'roles_management', 'desc_': '角色管理', 'url': '/api/admin/role'}, {'id': 3, 'name': 'content_management', 'desc_': '内容管理', 'url': '/api/admin/content'}], 'menus': []}]}
+2025-10-10 16:26:54 - urllib3.connectionpool - DEBUG - http://localhost:8443 "PUT /api/admin/user HTTP/11" 200 None
+2025-10-10 16:26:54 - utils - DEBUG - 响应状态码: 200
+2025-10-10 16:26:55 - utils - DEBUG - 发送 PUT 请求: http://localhost:8443/api/admin/user
+2025-10-10 16:26:55 - utils - DEBUG - 请求数据: {'username': 'admin_demo', 'name': '', 'phone': '', 'email': 'admin_demo@example.com', 'roles': [{'id': 3, 'name': 'visitor', 'nameZh': '访客', 'enabled': True, 'perms': [], 'menus': [{'id': 1, 'path': '/admin', 'name': 'AdminIndex', 'nameZh': '首页', 'iconCls': 'el-icon-s-home', 'component': 'AdminIndex', 'parentId': 0, 'children': [{'id': 2, 'path': '/admin/dashboard', 'name': 'DashboardAdmin', 'nameZh': '运行情况', 'iconCls': None, 'component': 'dashboard/admin/index', 'parentId': 1, 'children': []}]}]}]}
+2025-10-10 16:26:55 - urllib3.connectionpool - DEBUG - http://localhost:8443 "PUT /api/admin/user HTTP/11" 200 None
+2025-10-10 16:26:55 - utils - DEBUG - 响应状态码: 200

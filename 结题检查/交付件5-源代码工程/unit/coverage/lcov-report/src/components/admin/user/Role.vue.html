@@ -1,0 +1,807 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/components/admin/user/Role.vue</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="..\..\..\..\prettify.css" />
+    <link rel="stylesheet" href="..\..\..\..\base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(..\..\..\..\sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="..\..\..\..\index.html">All files</a> / <a href="index.html">src/components/admin/user</a> Role.vue
+    </h1>
+    <div class='clearfix'>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223
+224
+225
+226
+227
+228
+229
+230
+231
+232
+233
+234
+235
+236
+237
+238
+239
+240
+241
+242
+243
+244
+245
+246
+247
+248
+249
+250
+251
+252
+253
+254
+255</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">&lt;template&gt;
+  &lt;div&gt;
+    &lt;el-dialog
+      title="修改角色信息"
+      :visible.sync="dialogFormVisible"&gt;
+      &lt;el-form v-model="selectedRole" style="text-align: left" ref="dataForm"&gt;
+        &lt;el-form-item label="角色名" label-width="120px" prop="username"&gt;
+          &lt;el-input v-model="selectedRole.name" autocomplete="off"&gt;&lt;/el-input&gt;
+        &lt;/el-form-item&gt;
+        &lt;el-form-item label="角色描述" label-width="120px" prop="name"&gt;
+          &lt;el-input v-model="selectedRole.nameZh" autocomplete="off"&gt;&lt;/el-input&gt;
+        &lt;/el-form-item&gt;
+        &lt;el-form-item label="功能配置" label-width="120px" prop="perms"&gt;
+          &lt;el-checkbox-group v-model="selectedPermsIds"&gt;
+            &lt;el-checkbox v-for="(perm,i) in perms" :key="i" :label="perm.id"&gt;{{perm.desc_}}&lt;/el-checkbox&gt;
+          &lt;/el-checkbox-group&gt;
+        &lt;/el-form-item&gt;
+        &lt;el-form-item label="菜单配置" label-width="120px" prop="menus"&gt;
+          &lt;el-tree
+            :data="menus"
+            :props="props"
+            show-checkbox
+            :default-checked-keys="selectedMenusIds"
+            node-key="id"
+            ref="tree"&gt;
+          &lt;/el-tree&gt;
+        &lt;/el-form-item&gt;
+      &lt;/el-form&gt;
+      &lt;div slot="footer" class="dialog-footer"&gt;
+        &lt;el-button @click="dialogFormVisible = false"&gt;取 消&lt;/el-button&gt;
+        &lt;el-button type="primary" @click="onSubmit(selectedRole)"&gt;确 定&lt;/el-button&gt;
+      &lt;/div&gt;
+    &lt;/el-dialog&gt;
+    &lt;el-row style="margin: 18px 0px 0px 18px "&gt;
+      &lt;el-breadcrumb separator-class="el-icon-arrow-right"&gt;
+        &lt;el-breadcrumb-item :to="{ path: '/admin/dashboard' }"&gt;管理中心&lt;/el-breadcrumb-item&gt;
+        &lt;el-breadcrumb-item&gt;用户管理&lt;/el-breadcrumb-item&gt;
+        &lt;el-breadcrumb-item&gt;角色配置&lt;/el-breadcrumb-item&gt;
+      &lt;/el-breadcrumb&gt;
+    &lt;/el-row&gt;
+    &lt;role-create @onSubmit="listRoles()"&gt;&lt;/role-create&gt;
+    &lt;el-card style="margin: 18px 2%;width: 95%"&gt;
+      &lt;el-table
+        :data="roles"
+        stripe
+        style="width: 100%"
+        :max-height="tableHeight"&gt;
+        &lt;el-table-column
+          type="selection"
+          width="55"&gt;
+        &lt;/el-table-column&gt;
+        &lt;el-table-column
+          prop="id"
+          label="id"
+          width="100"&gt;
+        &lt;/el-table-column&gt;
+        &lt;el-table-column
+          prop="name"
+          label="角色名"
+          fit&gt;
+        &lt;/el-table-column&gt;
+        &lt;el-table-column
+          prop="nameZh"
+          label="角色描述"
+          fit&gt;
+        &lt;/el-table-column&gt;
+        &lt;el-table-column
+          label="状态"
+          width="100"&gt;
+          &lt;template slot-scope="scope"&gt;
+            &lt;el-switch
+              v-model="scope.row.enabled"
+              active-color="#13ce66"
+              inactive-color="#ff4949"
+              @change="(value) =&gt; commitStatusChange(value, scope.row)"&gt;
+            &lt;/el-switch&gt;
+          &lt;/template&gt;
+        &lt;/el-table-column&gt;
+        &lt;el-table-column
+          label="操作"
+          width="120"&gt;
+          &lt;template slot-scope="scope"&gt;
+            &lt;el-button
+              type="text"
+              size="small"
+              @click="editRole(scope.row)"&gt;
+              编辑
+            &lt;/el-button&gt;
+            &lt;el-button
+              type="text"
+              size="small"&gt;
+              移除
+            &lt;/el-button&gt;
+          &lt;/template&gt;
+        &lt;/el-table-column&gt;
+      &lt;/el-table&gt;
+      &lt;div style="margin: 20px 0 20px 0;float: left"&gt;
+        &lt;el-button&gt;取消选择&lt;/el-button&gt;
+        &lt;el-button&gt;批量删除&lt;/el-button&gt;
+      &lt;/div&gt;
+    &lt;/el-card&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+&nbsp;
+&lt;script&gt;
+<span class="cstat-no" title="statement not covered" >  import RoleCreate from './RoleCreate'</span>
+  export default {
+    name: 'UserRole',
+    components: {RoleCreate},
+<span class="fstat-no" title="function not covered" >    data () {</span>
+<span class="cstat-no" title="statement not covered" >      return {</span>
+        dialogFormVisible: false,
+        roles: [],
+        perms: [],
+        menus: [],
+        selectedRole: [],
+        selectedPermsIds: [],
+        selectedMenusIds: [],
+        props: {
+          id: 'id',
+          label: 'nameZh',
+          children: 'children'
+        }
+      }
+    },
+<span class="fstat-no" title="function not covered" >    mounted () {</span>
+<span class="cstat-no" title="statement not covered" >      this.listRoles()</span>
+<span class="cstat-no" title="statement not covered" >      this.listPerms()</span>
+<span class="cstat-no" title="statement not covered" >      this.listMenus()</span>
+    },
+    computed: {
+<span class="fstat-no" title="function not covered" >      tableHeight () {</span>
+<span class="cstat-no" title="statement not covered" >        return window.innerHeight - 320</span>
+      }
+    },
+    methods: {
+<span class="fstat-no" title="function not covered" >      listRoles () {</span>
+<span class="cstat-no" title="statement not covered" >        var _this = this</span>
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >        this.$axios.get('/admin/role').then(resp =&gt; {</span></span>
+<span class="cstat-no" title="statement not covered" >          if (resp &amp;&amp; resp.status === 200) {</span>
+<span class="cstat-no" title="statement not covered" >            _this.roles = resp.data.result</span>
+          }
+        })
+      },
+<span class="fstat-no" title="function not covered" >      listPerms () {</span>
+<span class="cstat-no" title="statement not covered" >        var _this = this</span>
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >        this.$axios.get('/admin/role/perm').then(resp =&gt; {</span></span>
+<span class="cstat-no" title="statement not covered" >          if (resp &amp;&amp; resp.data.code === 200) {</span>
+<span class="cstat-no" title="statement not covered" >            _this.perms = resp.data.result</span>
+          }
+        })
+      },
+<span class="fstat-no" title="function not covered" >      listMenus () {</span>
+<span class="cstat-no" title="statement not covered" >        var _this = this</span>
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >        this.$axios.get('/admin/role/menu').then(resp =&gt; {</span></span>
+<span class="cstat-no" title="statement not covered" >          if (resp &amp;&amp; resp.data.code === 200) {</span>
+<span class="cstat-no" title="statement not covered" >            _this.menus = resp.data.result</span>
+          }
+        })
+      },
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >      commitStatusChange (value, role) {</span></span>
+<span class="cstat-no" title="statement not covered" >        if (role.id !== 1) {</span>
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >          this.$confirm('是否更改角色状态？', '提示', {</span></span>
+            confirmButtonText: '确定',
+            cancelButtonText: '取消',
+            type: 'warning'
+          }).then(() =&gt; {
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >            this.$axios.put('/admin/role/status', {</span></span>
+              enabled: value,
+              id: role.id
+            }).then(resp =&gt; {
+<span class="cstat-no" title="statement not covered" >              if (resp &amp;&amp; resp.data.code === 200) {</span>
+<span class="cstat-no" title="statement not covered" >                if (value) {</span>
+<span class="cstat-no" title="statement not covered" >                  this.$message('角色 [' + role.nameZh + '] 已启用')</span>
+                } else {
+<span class="cstat-no" title="statement not covered" >                  this.$message('角色 [' + role.nameZh + '] 已禁用')</span>
+                }
+              }
+            })
+<span class="fstat-no" title="function not covered" >          }).catch(() =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >            role.enabled = !role.enabled</span>
+<span class="cstat-no" title="statement not covered" >            this.$message({</span>
+              type: 'info',
+              message: '已取消'
+            })
+          })
+        } else {
+<span class="cstat-no" title="statement not covered" >          role.enabled = true</span>
+<span class="cstat-no" title="statement not covered" >          this.$alert('无法禁用系统管理员！')</span>
+        }
+      },
+<span class="fstat-no" title="function not covered" >    editRole (role) {</span>
+<span class="cstat-no" title="statement not covered" >      this.dialogFormVisible = true</span>
+<span class="cstat-no" title="statement not covered" >      this.selectedRole = role</span>
+<span class="cstat-no" title="statement not covered" >      let permIds = []</span>
+<span class="cstat-no" title="statement not covered" >      for (let i = 0; i &lt; role.perms.length; i++) {</span>
+<span class="cstat-no" title="statement not covered" >        permIds.push(role.perms[i].id)</span>
+      }
+<span class="cstat-no" title="statement not covered" >      this.selectedPermsIds = permIds</span>
+<span class="cstat-no" title="statement not covered" >      let menuIds = []</span>
+<span class="cstat-no" title="statement not covered" >      for (let i = 0; i &lt; role.menus.length; i++) {</span>
+<span class="cstat-no" title="statement not covered" >        menuIds.push(role.menus[i].id)</span>
+<span class="cstat-no" title="statement not covered" >        for (let j = 0; j &lt; role.menus[i].children.length; j++) {</span>
+<span class="cstat-no" title="statement not covered" >          menuIds.push(role.menus[i].children[j].id)</span>
+        }
+      }
+<span class="cstat-no" title="statement not covered" >      this.selectedMenusIds = menuIds</span>
+      // 判断树是否已经加载，第一次打开对话框前树不存在，会报错。所以需要设置 default-checked
+<span class="cstat-no" title="statement not covered" >      if (this.$refs.tree) {</span>
+<span class="cstat-no" title="statement not covered" >        this.$refs.tree.setCheckedKeys(menuIds)</span>
+      }
+    },
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >      onSubmit (role) {</span></span>
+<span class="cstat-no" title="statement not covered" >        let _this = this</span>
+        // 根据视图绑定的角色 id 向后端传送角色信息
+<span class="cstat-no" title="statement not covered" >        let perms = []</span>
+<span class="cstat-no" title="statement not covered" >        for (let i = 0; i &lt; _this.selectedPermsIds.length; i++) {</span>
+<span class="cstat-no" title="statement not covered" >          for (let j = 0; j &lt; _this.perms.length; j++) {</span>
+<span class="cstat-no" title="statement not covered" >            if (_this.selectedPermsIds[i] === _this.perms[j].id) {</span>
+<span class="cstat-no" title="statement not covered" >              perms.push(_this.perms[j])</span>
+            }
+          }
+        }
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >        this.$axios.put('/admin/role', {</span></span>
+          id: role.id,
+          name: role.name,
+          nameZh: role.nameZh,
+          enabled: role.enabled,
+          perms: perms
+        }).then(resp =&gt; {
+<span class="cstat-no" title="statement not covered" >          if (resp &amp;&amp; resp.data.code === 200) {</span>
+<span class="cstat-no" title="statement not covered" >            this.$alert(resp.data.result)</span>
+<span class="cstat-no" title="statement not covered" >            this.dialogFormVisible = false</span>
+<span class="cstat-no" title="statement not covered" >            this.listRoles()</span>
+          }
+        })
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >        this.$axios.put('/admin/role/menu?rid=' + role.id, {</span></span>
+          menusIds: this.$refs.tree.getCheckedKeys()
+        }).then(resp =&gt; {
+<span class="cstat-no" title="statement not covered" >          if (resp &amp;&amp; resp.data.code === 200) {</span>
+<span class="cstat-no" title="statement not covered" >            console.log(resp.data.result)</span>
+          }
+        })
+      }
+    }
+  }
+&lt;/script&gt;
+&nbsp;
+&lt;style scoped&gt;
+  .add-button {
+    float: left;
+    margin: 18px 0 18px 10px;
+  }
+&lt;/style&gt;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sat Oct 11 2025 16:54:23 GMT+0800 (GMT+08:00)
+</div>
+</div>
+<script src="..\..\..\..\prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="..\..\..\..\sorter.js"></script>
+</body>
+</html>

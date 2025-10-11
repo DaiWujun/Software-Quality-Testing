@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/components/admin/dashboard/admin/components/TodoList/index.vue</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="..\..\..\..\..\..\..\prettify.css" />
+    <link rel="stylesheet" href="..\..\..\..\..\..\..\base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(..\..\..\..\..\..\..\sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="..\..\..\..\..\..\..\index.html">All files</a> / <a href="index.html">src/components/admin/dashboard/admin/components/TodoList</a> index.vue
+    </h1>
+    <div class='clearfix'>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">&lt;template&gt;
+  &lt;section class="todoapp"&gt;
+    &lt;!-- header --&gt;
+    &lt;header class="header"&gt;
+      &lt;input class="new-todo" autocomplete="off" placeholder="Todo List" @keyup.enter="addTodo"&gt;
+    &lt;/header&gt;
+    &lt;!-- main section --&gt;
+    &lt;section v-show="todos.length" class="main"&gt;
+      &lt;input id="toggle-all" :checked="allChecked" class="toggle-all" type="checkbox" @change="toggleAll({ done: !allChecked })"&gt;
+      &lt;label for="toggle-all" /&gt;
+      &lt;ul class="todo-list"&gt;
+        &lt;todo
+          v-for="(todo, index) in filteredTodos"
+          :key="index"
+          :todo="todo"
+          @toggleTodo="toggleTodo"
+          @editTodo="editTodo"
+          @deleteTodo="deleteTodo"
+        /&gt;
+      &lt;/ul&gt;
+    &lt;/section&gt;
+    &lt;!-- footer --&gt;
+    &lt;footer v-show="todos.length" class="footer"&gt;
+      &lt;span class="todo-count"&gt;
+        &lt;strong&gt;{{ remaining }}&lt;/strong&gt;
+        {{ remaining | pluralize('item') }} left
+      &lt;/span&gt;
+      &lt;ul class="filters"&gt;
+        &lt;li v-for="(val, key) in filters" :key="key"&gt;
+          &lt;a :class="{ selected: visibility === key }" @click.prevent="visibility = key"&gt;{{ key | capitalize }}&lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;!-- &lt;button class="clear-completed" v-show="todos.length &gt; remaining" @click="clearCompleted"&gt;
+        Clear completed
+      &lt;/button&gt; --&gt;
+    &lt;/footer&gt;
+  &lt;/section&gt;
+&lt;/template&gt;
+&nbsp;
+&lt;script&gt;
+<span class="cstat-no" title="statement not covered" >import Todo from './Todo.vue'</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >const STORAGE_KEY = 'todos'</span>
+<span class="cstat-no" title="statement not covered" >const filters = {</span>
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >  all: todos =&gt; todos,</span></span>
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >  active: todos =&gt; todos.filter(todo =&gt; !todo.done),</span></span>
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >  completed: todos =&gt; todos.filter(todo =&gt; todo.done)</span></span>
+}
+<span class="cstat-no" title="statement not covered" >const defalutList = [</span>
+  { text: 'star this repository', done: false },
+  { text: 'fork this repository', done: false },
+  { text: 'follow author', done: false },
+  { text: 'vue-element-admin', done: true },
+  { text: 'vue', done: true },
+  { text: 'element-ui', done: true },
+  { text: 'axios', done: true },
+  { text: 'webpack', done: true }
+]
+export default {
+  components: { Todo },
+  filters: {
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >    pluralize: (n, w) =&gt; n === 1 ? w : w + 's',</span></span>
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >    capitalize: s =&gt; s.charAt(0).toUpperCase() + s.slice(1)</span></span>
+  },
+<span class="fstat-no" title="function not covered" >  data () {</span>
+<span class="cstat-no" title="statement not covered" >    return {</span>
+      visibility: 'all',
+      filters,
+      // todos: JSON.parse(window.localStorage.getItem(STORAGE_KEY)) || defalutList
+      todos: defalutList
+    }
+  },
+  computed: {
+<span class="fstat-no" title="function not covered" >    allChecked () {</span>
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >      return this.todos.every(todo =&gt; todo.done)</span></span>
+    },
+<span class="fstat-no" title="function not covered" >    filteredTodos () {</span>
+<span class="cstat-no" title="statement not covered" >      return filters[this.visibility](this.todos)</span>
+    },
+<span class="fstat-no" title="function not covered" >    remaining () {</span>
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >      return this.todos.filter(todo =&gt; !todo.done).length</span></span>
+    }
+  },
+  methods: {
+<span class="fstat-no" title="function not covered" >    setLocalStorage () {</span>
+<span class="cstat-no" title="statement not covered" >      window.localStorage.setItem(STORAGE_KEY, JSON.stringify(this.todos))</span>
+    },
+<span class="fstat-no" title="function not covered" >    addTodo (e) {</span>
+<span class="cstat-no" title="statement not covered" >      const text = e.target.value</span>
+<span class="cstat-no" title="statement not covered" >      if (text.trim()) {</span>
+<span class="cstat-no" title="statement not covered" >        this.todos.push({</span>
+          text,
+          done: false
+        })
+<span class="cstat-no" title="statement not covered" >        this.setLocalStorage()</span>
+      }
+<span class="cstat-no" title="statement not covered" >      e.target.value = ''</span>
+    },
+<span class="fstat-no" title="function not covered" >    toggleTodo (val) {</span>
+<span class="cstat-no" title="statement not covered" >      val.done = !val.done</span>
+<span class="cstat-no" title="statement not covered" >      this.setLocalStorage()</span>
+    },
+<span class="fstat-no" title="function not covered" >    deleteTodo (todo) {</span>
+<span class="cstat-no" title="statement not covered" >      this.todos.splice(this.todos.indexOf(todo), 1)</span>
+<span class="cstat-no" title="statement not covered" >      this.setLocalStorage()</span>
+    },
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >    editTodo ({ todo, value }) {</span></span>
+<span class="cstat-no" title="statement not covered" >      todo.text = value</span>
+<span class="cstat-no" title="statement not covered" >      this.setLocalStorage()</span>
+    },
+<span class="fstat-no" title="function not covered" >    clearCompleted () {</span>
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >      this.todos = this.todos.filter(todo =&gt; !todo.done)</span></span>
+<span class="cstat-no" title="statement not covered" >      this.setLocalStorage()</span>
+    },
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >    toggleAll ({ done }) {</span></span>
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >      this.todos.forEach(todo =&gt; {</span></span>
+<span class="cstat-no" title="statement not covered" >        todo.done = done</span>
+<span class="cstat-no" title="statement not covered" >        this.setLocalStorage()</span>
+      })
+    }
+  }
+}
+&lt;/script&gt;
+&nbsp;
+&lt;style lang="scss"&gt;
+  @import './index.scss';
+&lt;/style&gt;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sat Oct 11 2025 16:54:23 GMT+0800 (GMT+08:00)
+</div>
+</div>
+<script src="..\..\..\..\..\..\..\prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="..\..\..\..\..\..\..\sorter.js"></script>
+</body>
+</html>

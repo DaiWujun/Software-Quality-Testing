@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/components/admin/content/ArticleEditor.vue</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="..\..\..\..\prettify.css" />
+    <link rel="stylesheet" href="..\..\..\..\base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(..\..\..\..\sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="..\..\..\..\index.html">All files</a> / <a href="index.html">src/components/admin/content</a> ArticleEditor.vue
+    </h1>
+    <div class='clearfix'>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">&lt;template&gt;
+  &lt;div&gt;
+    &lt;el-row style="margin: 18px 0px 0px 18px "&gt;
+      &lt;el-breadcrumb separator-class="el-icon-arrow-right"&gt;
+        &lt;el-breadcrumb-item :to="{ path: '/admin/dashboard'}"&gt;管理中心&lt;/el-breadcrumb-item&gt;
+        &lt;el-breadcrumb-item :to="{ path: '/admin/content/book'}"&gt;内容管理&lt;/el-breadcrumb-item&gt;
+        &lt;el-breadcrumb-item :to="{ path: '/admin/content/article'}"&gt;文章管理&lt;/el-breadcrumb-item&gt;
+        &lt;el-breadcrumb-item&gt;编辑器&lt;/el-breadcrumb-item&gt;
+      &lt;/el-breadcrumb&gt;
+    &lt;/el-row&gt;
+    &lt;el-row&gt;
+      &lt;el-input
+        v-model="article.articleTitle"
+        style="margin: 10px 0px;font-size: 18px;"
+        placeholder="请输入标题"&gt;&lt;/el-input&gt;
+    &lt;/el-row&gt;
+    &lt;el-row style="height: calc(100vh - 140px);"&gt;
+      &lt;mavon-editor
+        v-model="article.articleContentMd"
+        style="height: 100%;"
+        ref=md
+        @save="saveArticles"
+        fontSize="16px"&gt;
+        &lt;button type="button" class="op-icon el-icon-document" :title="'摘要/封面'" slot="left-toolbar-after"
+                @click="dialogVisible = true"&gt;&lt;/button&gt;
+      &lt;/mavon-editor&gt;
+      &lt;el-dialog
+        :visible.sync="dialogVisible"
+        width="30%"&gt;
+        &lt;el-divider content-position="left"&gt;摘要&lt;/el-divider&gt;
+        &lt;el-input
+          type="textarea"
+          v-model="article.articleAbstract"
+          rows="6"
+          maxlength="255"
+          show-word-limit&gt;&lt;/el-input&gt;
+        &lt;el-divider content-position="left"&gt;封面&lt;/el-divider&gt;
+        &lt;div style="margin-top: 20px"&gt;
+          &lt;el-input v-model="article.articleCover" autocomplete="off" placeholder="图片 URL"&gt;&lt;/el-input&gt;
+          &lt;img-upload @onUpload="uploadImg" ref="imgUpload" style="margin-top: 5px"&gt;&lt;/img-upload&gt;
+        &lt;/div&gt;
+        &lt;span slot="footer" class="dialog-footer"&gt;
+          &lt;el-button @click="dialogVisible = false"&gt;取 消&lt;/el-button&gt;
+          &lt;el-button type="primary" @click="dialogVisible = false"&gt;确 定&lt;/el-button&gt;
+        &lt;/span&gt;
+      &lt;/el-dialog&gt;
+    &lt;/el-row&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+&nbsp;
+&lt;script&gt;
+<span class="cstat-no" title="statement not covered" >  import ImgUpload from './ImgUpload'</span>
+&nbsp;
+  export default {
+    name: 'Editor',
+    components: {ImgUpload},
+<span class="fstat-no" title="function not covered" >    data () {</span>
+<span class="cstat-no" title="statement not covered" >      return {</span>
+        article: {},
+        dialogVisible: false
+      }
+    },
+<span class="fstat-no" title="function not covered" >    mounted () {</span>
+<span class="cstat-no" title="statement not covered" >      if (this.$route.params.article) {</span>
+<span class="cstat-no" title="statement not covered" >        this.article = this.$route.params.article</span>
+      }
+    },
+    methods: {
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >      saveArticles (value, render) {</span></span>
+        // value 是 md，render 是 html
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >        this.$confirm('是否保存并发布文章?', '提示', {</span></span>
+          confirmButtonText: '确定',
+          cancelButtonText: '取消',
+          type: 'warning'
+        }).then(() =&gt; {
+<span class="cstat-no" title="statement not covered" >            this.$axios</span>
+<span class="fstat-no" title="function not covered" >              .post('/admin/content/article', {</span>
+                id: this.article.id,
+                articleTitle: this.article.articleTitle,
+                articleContentMd: value,
+                articleContentHtml: render,
+                articleAbstract: this.article.articleAbstract,
+                articleCover: this.article.articleCover,
+                articleDate: this.article.articleDate
+              }).then(resp =&gt; {
+<span class="cstat-no" title="statement not covered" >              if (resp &amp;&amp; resp.data.code === 200) {</span>
+<span class="cstat-no" title="statement not covered" >                this.$message({</span>
+                  type: 'info',
+                  message: '已保存成功'
+                })
+              }
+            })
+<span class="fstat-no" title="function not covered" >          }</span>
+        ).catch(() =&gt; {
+<span class="cstat-no" title="statement not covered" >          this.$message({</span>
+            type: 'info',
+            message: '已取消发布'
+          })
+        })
+      },
+<span class="fstat-no" title="function not covered" >      uploadImg () {</span>
+<span class="cstat-no" title="statement not covered" >        this.article.articleCover = this.$refs.imgUpload.url</span>
+      }
+    }
+  }
+&lt;/script&gt;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sat Oct 11 2025 16:54:23 GMT+0800 (GMT+08:00)
+</div>
+</div>
+<script src="..\..\..\..\prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="..\..\..\..\sorter.js"></script>
+</body>
+</html>
